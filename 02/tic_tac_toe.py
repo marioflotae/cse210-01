@@ -10,7 +10,7 @@
 def main():
     grid = create_grid()
     play = 1
-    while not (draw(grid) or is_a_win(grid)):
+    while not (check_draw(grid) or is_a_win(grid)):
         draw(grid)
         make_a_move(play, grid)
         play += 1
